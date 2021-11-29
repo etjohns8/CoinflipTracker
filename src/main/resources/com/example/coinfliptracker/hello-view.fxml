@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="com.example.coinfliptracker.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="addOneHeads" layoutX="121.0" layoutY="100.0" mnemonicParsing="false" onAction="#OneHeads" prefHeight="25.0" prefWidth="117.0" text="Add a heads" />
+            <Button fx:id="addOneTails" layoutX="295.0" layoutY="97.0" mnemonicParsing="false" onAction="#OneTails" prefHeight="25.0" prefWidth="117.0" text="Add a tails" />
+            <TextField fx:id="totalFlips" editable="false" layoutX="206.0" layoutY="25.0" />
+            <Label layoutX="117.0" layoutY="29.0" text="You have added:" />
+            <Label layoutX="117.0" layoutY="58.0" text="This is a" />
+            <TextField fx:id="FlipChance" editable="false" layoutX="164.0" layoutY="54.0" prefHeight="25.0" prefWidth="50.0" />
+            <Label layoutX="220.0" layoutY="58.0" text="percent chance to flip heads" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="clearButton" mnemonicParsing="false" onAction="#ClearFlips" prefHeight="25.0" prefWidth="117.0" text="Delete All Results" />
+   </children>
+</VBox>
